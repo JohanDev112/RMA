@@ -1,14 +1,16 @@
 ---
-import RecursosGrid from "@/components/Recursos.tsx";
+import RecursosGrid from "@/components/RecursosGrid";
 import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout title="Recursos">
+  <main>
   <section>
       <section class="clases_hero">
         <h1 class="section_title">Recursos</h1>
-      <RecursosGrid client:visible id=""/> 
+      <RecursosGrid client:load ></RecursosGrid> 
   </section>
+</main>
 </Layout>
 
 <style>
